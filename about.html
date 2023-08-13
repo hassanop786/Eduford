@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford - the World best University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+#header{
+    height: 50vh;
+    width: 100%;
+    background-image:radial-gradient(rgba(4,9,30,0.7) , rgba(4,9,30,0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#navbar{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+#logo{
+    width: 12rem;
+}
+#menu{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#menu .nav-links a{
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+}
+#menu .nav-links a::after{
+    content: '';
+    background-color: #f44336;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    margin-top: 2px;
+    transition: all 0.7s;
+}
+#menu .nav-links a:hover::after{
+    width: 100%;
+}
+#about-page{
+    margin: 7rem auto;
+    /* width: 70%; */
+    display: flex;
+    justify-content: center;
+}
+#about-page img{
+    width: 500px;
+    height: 360px;
+    border-radius: 10px;
+}
+.details{
+    margin-left: 2rem;
+    width: 400px;
+}
+.details p{
+    text-align: left;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.603);
+    margin: 1rem 0;
+}
+.details h1{
+    font-family:'Poppins' ,serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: left;
+}
+.details a{
+    font-size: 15px;
+    color: #f44336;
+    text-decoration: none;
+    padding: 8px;
+    position: relative;
+    transition: 0.5s;
+    margin-left: -70%;
+}
+.details a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 25%;
+    bottom: 0;
+    left: 0;
+    background-color: #f44336;
+    transition:0.7s;
+
+}
+.details a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 25%;
+    top: 0;
+    right: 0;
+    background-color: #f44336;
+    transition:0.5s;
+
+}
+.details a:hover::after , .details a:hover::before{
+   width: 100%;
+}
+.details a:hover{
+    border-right: 2px solid #f44336;
+    border-left: 2px solid #f44336;
+}
+#about-us h3{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#about-us p{
+    text-align: center;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.603);
+}
+#s-links i{
+    margin: 1rem;
+    color: #f44336;
+}
+.nav-links{
+    display: flex;
+}
+    </style>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <a href=""><img src="images/logo.png" id="logo"></a>
+            <div id="menu">
+                <div class="nav-links">
+                <i class="fa-solid fa-xmark" id="xmark" style="font-size: 2rem; color: white;" onclick="hideNav()"></i>
+                    <a href="index.html"><i class="fa-solid fa-house-chimney" style="color: #f44336;"></i> Home</a>
+                    <a href="about.html"><i class="fa-solid fa-circle-info" style="color: #f44336;"></i> About</a>
+                    <a href="courses.html"><i class="fa-solid fa-newspaper" style="color: #f44336;"></i> Courses</a>
+                    <a href="blogs.html"><i class="fa-solid fa-pen-ruler" style="color: #f44336;"></i> Blogs</a>
+                    <a href="contact.html"><i class="fa-solid fa-phone" style="color: #f44336;"></i> Contact</a>
+                 </div>
+                <i class="fa-solid fa-bars" id="bars" style="font-size: 1.7rem; color: white;" onclick="showNav()"></i>
+            </div>
+        </nav>
+        <h1 style="color: white;
+        font-size: 2.5rem;
+        font-family: 'Poppins' , sans-serif;
+        transform: translateY(60%);
+        letter-spacing: 2px;
+        font-weight: 500;" class="top-heading">About</h1>
+    </header>
+    <section id="about-page">
+        <img src="images/about.jpg">
+        <div class="details">
+            <h1>We are the World's Largest University</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quas voluptatum dolorum excepturi distinctio quos illo dolore soluta ullam, consequatur modi voluptas! Soluta et porro fugit deleniti omnis temporibus deserunt!. </p>
+            <a href="">Explore Now</a>
+        </div>
+    </section>
+
+    <footer id="about-us">
+        <h3 class="top-heading">About Us</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ea ipsum Lorem ipsum <br> dolor sit, amet consectetur adipisicing elit. Aliquid ea ipsum </p>
+        <p>Made with <i class="fa-solid fa-heart" style="color: #f44336;"></i> by -Zahid Hassan</p>
+        <div id="s-links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p style="margin-top: 10px;">All Copyright Reserved @ Eduford 2016-2023</p>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2a7891c2ec.js" crossorigin="anonymous"></script>
+    <script src="script.js">
+    </script>
+</body>
+</html>

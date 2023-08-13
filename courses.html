@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford - the World best University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+#header{
+    height: 50vh;
+    width: 100%;
+    background-image:radial-gradient(rgba(4,9,30,0.7) , rgba(4,9,30,0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#navbar{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+#logo{
+    width: 12rem;
+}
+#menu{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#menu .nav-links a{
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+}
+#menu .nav-links a::after{
+    content: '';
+    background-color: #f44336;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    margin-top: 2px;
+    transition: all 0.7s;
+}
+#menu .nav-links a:hover::after{
+    width: 100%;
+}
+#about-us{
+    margin-top: 5rem;
+}
+#about-us h3{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#about-us p{
+    text-align: center;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.603);
+}
+#s-links i{
+    margin: 1rem;
+    color: #f44336;
+}
+#courses{
+    margin-top: 8rem;
+    width: 100%;
+}
+#courses h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+#courses p{
+    text-align: center;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.603);
+}
+#cards{
+    display: flex;
+    width: 70%;
+    margin: 5rem auto;
+    justify-content: space-between;
+}
+.card{
+    width: 30%;
+    background-color: rgba(255, 192, 203, 0.515);
+    padding: 13px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+.card h3{
+    text-align: center;
+    margin: 10px 0;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px;
+}
+#facilities{
+    margin-top: 8rem;
+    width: 100%;
+}
+#facilities h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+#facilities p{
+    text-align: center;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.603);
+}
+#f-container{
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 80%;
+    display: flex;
+}
+.box{
+    width: 300px;
+    margin: 0 20px;
+    background-color: rgba(255, 192, 203, 0.515);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.box h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 10px;
+}
+.box p{
+    margin: 10px;
+}
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px;
+}
+.nav-links{
+    display: flex;
+}
+    </style>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <a href=""><img src="images/logo.png" id="logo"></a>
+            <div id="menu">
+                <div class="nav-links">
+                <i class="fa-solid fa-xmark" id="xmark" style="font-size: 2rem; color: white;" onclick="hideNav()"></i>
+                    <a href="index.html"><i class="fa-solid fa-house-chimney" style="color: #f44336;"></i> Home</a>
+                    <a href="about.html"><i class="fa-solid fa-circle-info" style="color: #f44336;"></i> About</a>
+                    <a href="courses.html"><i class="fa-solid fa-newspaper" style="color: #f44336;"></i> Courses</a>
+                    <a href="blogs.html"><i class="fa-solid fa-pen-ruler" style="color: #f44336;"></i> Blogs</a>
+                    <a href="contact.html"><i class="fa-solid fa-phone" style="color: #f44336;"></i> Contact</a>
+                 </div>
+                <i class="fa-solid fa-bars" id="bars" style="font-size: 1.7rem; color: white;" onclick="showNav()"></i>
+            </div>
+        </nav>
+        <h1 style="color: white;
+        font-size: 2rem;
+        font-family: 'Poppins' , sans-serif;
+        transform: translateY(60%);
+        letter-spacing: 2px;
+        font-weight: 500;" class="top-heading"> Our Courses</h1>
+    </header>
+    <section id="courses">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, adipisicing elit. Magnam, hic.</p>
+        <div id="cards">
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempora, eaque, est tempore distinctio laboriosam in nam voluptatem, inventore quis dolore nobis quibusdam reprehenderit consequatur sed repellendus corporis alias obcaecati?</p>
+            </div>
+            <div class="card">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempora, eaque, est tempore distinctio laboriosam in nam voluptatem, inventore quis dolore nobis quibusdam reprehenderit consequatur sed repellendus corporis alias obcaecati?</p>
+            </div>
+            <div class="card">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempora, eaque, est tempore distinctio laboriosam in nam voluptatem, inventore quis dolore nobis quibusdam reprehenderit consequatur sed repellendus corporis alias obcaecati?</p>
+            </div>
+        </div>
+    </section>
+    <section id="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet, adipisicing elit. Magnam, hic.</p>
+        <div id="f-container">
+            <div class="box">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro nihil ratione? Ducimus vel corporis quam ea molestias ab facere ipsam! Non delectus possimus sapiente expedita explicabo fugiat excepturi dolor.</p>
+            </div>
+            <div class="box">
+                <img src="images/cafeteria.png">
+                <h3>Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro nihil ratione? Ducimus vel corporis quam ea molestias ab facere ipsam! Non delectus possimus sapiente expedita explicabo fugiat excepturi dolor.</p>
+            </div>
+            <div class="box">
+                <img src="images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro nihil ratione? Ducimus vel corporis quam ea molestias ab facere ipsam! Non delectus possimus sapiente expedita explicabo fugiat excepturi dolor.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="about-us">
+        <h3 class="top-heading">About Us</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ea ipsum Lorem ipsum <br> dolor sit, amet consectetur adipisicing elit. Aliquid ea ipsum </p>
+        <p>Made with <i class="fa-solid fa-heart" style="color: #f44336;"></i> by -Zahid Hassan</p>
+        <div id="s-links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p style="margin-top: 10px;">All Copyright Reserved @ Eduford 2016-2023</p>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2a7891c2ec.js" crossorigin="anonymous"></script>
+    <script src="script.js">
+    </script>
+</body>
+</html>

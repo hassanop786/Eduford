@@ -1,0 +1,233 @@
+
+@media screen and (max-width:950px){
+    #about-page img{
+        width: 400px;
+        height: 260px;
+    }
+    .blogs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .categories{
+        margin-left: 0;
+        margin-top: 2rem;
+        width: 600px;
+    }
+}
+@media screen and (max-width:900px){
+    #menu .nav-links a{
+        font-size: 11px;
+    }
+    
+    #logo{
+        width: 9rem;
+    }
+}
+@media screen and (max-width:850px){
+    .details{
+        width: 300px;
+    }
+    .details p{
+        font-size: 11px;
+    }
+    .details h1{
+        font-size: 1.5rem;
+    }
+    #logo{
+        width: 7rem;
+    }
+}
+@media screen and (max-width:765px){
+    #about-page{
+        flex-direction: column;
+        align-items: center;
+    }
+    #bars,#xmark{
+        display: block;
+        cursor: pointer;
+    }
+    #xmark{
+        transform: translateX(-76px);
+        margin: 10px;
+    }
+    .details{
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+    .nav-links{
+        position: fixed;
+        top: 0;
+        right: -200px;
+        flex-direction: column;
+        width: 200px;
+        height: 100vh;
+        background-color: #f44336;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    #menu .nav-links a{
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    #menu .nav-links a i{
+        color: white !important;
+    }
+    #bars{
+        display: block;
+    }
+    #cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        margin: 1rem 0;
+    }
+    #imgBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img{
+        width: 60%;
+    }
+    #f-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        margin: 1.3rem 0;
+        width: 80%;
+    }
+    #content h1{
+        font-size: 2rem;
+    }
+    #courses h1 , #campus h1 , #facilities h1 , #reviews h1{
+        font-size: 2rem;
+    }
+    #enroll h1{
+        font-size: 1rem;
+    }
+    #enroll{
+        height: 300px;
+    }
+    .top-heading{
+        font-size: 1.5rem;
+    }
+    .top-heading-b{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:650px){
+    .blogs-details{
+        width: 400px;
+    }
+    .blogs-details img{
+        width: 400px;
+        height: 250px;
+    }
+    .blogs-details h3{
+        font-size: 1rem !important;
+    }
+    .blogs-details p{
+        font-size: 11px !important;
+    }
+    .categories{
+        width: 400px;
+    }
+    .form{
+        width: 400px;
+    }
+}
+@media screen and (max-width:450px){
+    
+    #content p{
+        font-size: 9px;
+    }
+    .review-box , #review-container{
+        width: 250px;
+    }
+    .stars{
+        transform: translateX(-10%);
+    }
+    .review-box p{
+        font-size: 5px;
+    }
+    #about-page img{
+        width: 300px;
+        height: 180px;
+    }
+    .details{
+        width: 200px;
+    }
+    .details p{
+        font-size: 8px;
+    }
+    .details h1{
+        font-size: 1rem;
+    }
+    .details a{
+        font-size: 11px;
+        padding: 4px;
+    }
+    .top-heading{
+        font-size: 1rem;
+    }
+    #courses h1 , #campus h1 , #facilities h1 , #reviews h1{
+        font-size: 1.5rem;
+    }
+    .box h3{
+        font-size: 1rem;
+    }
+    .box p{
+        font-size: 8px !important;
+    }
+    #about-us p{
+        font-size: 9px;
+    }
+
+        .blogs-details{
+            width: 300px;
+        }
+        .blogs-details img{
+            width: 300px;
+            height: 200px;
+        }
+        .blogs-details h3{
+            font-size: 1rem !important;
+        }
+        .blogs-details p{
+            font-size: 11px !important;
+        }
+        .categories{
+            width: 300px;
+        }
+        .form{
+            width: 300px;
+        }
+        .span-box span{
+            font-size: 10px;
+        }
+        .top-heading-b{
+            font-size: 1rem !important;
+        }
+        .form h3{
+            font-size: 1rem !important;
+        }
+    }
+@media screen and (max-width:350px){
+    #navbar{
+        padding: 0 1rem;
+    }
+    #enroll{
+        
+        width: 90%;
+    }
+    #enroll h1{
+        font-size: 0.8rem;
+    }
+    #enroll a{
+        font-size: 11px;
+        padding: 5px;
+    }
+}
